@@ -13,7 +13,7 @@ function App() {
 
   const handleLoadScript = () => {
     Omise = window?.Omise
-    Omise.setPublicKey("pkey_test_5zlw05cusd3t3tr4e2r")
+    Omise.setPublicKey(import.meta.env.VITE_OPN_PK)
   }
 
   const onCheckOut = () => {
